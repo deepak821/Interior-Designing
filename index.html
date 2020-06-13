@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JK INTERIOR</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+
+        }
+        body{
+            margin: 0px;
+            padding: 0px;
+            /*background: url(cc.jpg) no-repeat center center/cover;*/
+            color:rgb(8, 8, 8);
+            font-family: 'Baloo Chettan 2', cursive;
+        }
+        .top::before{
+           content: "";
+           background-color:white
+           position: absolute;
+           height: 100%;
+           width: 100%;
+           z-index: -1;
+        }
+        #home{
+            display: flex;
+            flex-direction: column;
+            height: 540px;
+            padding: 60px;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-family: 'Baloo Chettan 2', cursive;
+        }
+        #home::before{
+        content: "";
+        background: url(int.jpg) no-repeat center center/cover;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        }
+        .left{
+            display: inline;
+            /*border:2px solid red;*/
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+        .left img{
+            width: 94px;
+        }
+        .mid{
+            display: block;
+            width: 35%;
+            margin: 20px auto;
+            /*border:2px solid green;*/
+        }
+        .navbar{
+            display: inline;
+        }
+        .navbar li{
+            display: inline;
+            margin: 10px;
+        }
+        .navbar li a{
+            color: black;
+            text-decoration: none;
+            font-size: 17px;
+        }
+       .navbar li a:hover{
+           border: 1px solid black;
+           background-color: black;
+           border-radius: 10px;
+           color: white;
+       }
+     .right{
+        display: block;
+        /*border:2px solid yellow;*/
+        right: 34px;
+        top: 20px;
+        position: absolute;
+        }
+        .right a img{
+            width: 20px;
+            margin: 5px;
+        }
+        .container{
+         display: block;
+         width: 34%;
+         margin: 10px auto;
+        }
+        #head{
+            height: 150px;
+            font-family: 'Fredoka One', cursive;
+            animation-name: deepak1;
+            animation-duration: 2s;
+            animation-iteration-count: 1;
+            animation-fill-mode: backwards;  
+        }
+        @keyframes deepak1{
+            from{
+              width: 2000px;
+            }
+            to{
+             width:0px ;
+            }
+        }
+        #h-primary{
+            font-family: 'Chelsea Market', cursive;
+        }
+        #btn{
+            font-size: 20px;
+            border: 1px solid black;
+            border-radius: 10px;
+            cursor: pointer;
+
+        }
+        #services::before{
+            content: "";
+            position: absolute;
+            background: url(big.jpg)no-repeat center center/cover;
+            height: 76%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.7;
+        }
+        /*#services{
+            animation-name: deepak1;
+            animation-duration: 2s;
+            animation-iteration-count: 1;
+
+        }
+        @keyframes deepak1{
+            from{
+              width: 0px;
+            }
+            to{
+             width: 2000px;
+            }
+        }*/
+        .cont{
+            display: inline-block;
+            border: 4px solid black;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 11px;
+            cursor: pointer;
+        }
+        .cont :hover{
+            color: white;
+            display: block;
+            border: 2px solid black;
+            border-radius: 10px;
+            background-color: black;
+        }
+        #img{
+            width: 339px;
+        }
+        #img1{
+            width: 339px;
+        }
+        #img2{
+            width: 339px;
+        }
+        .center{
+            text-align: center;
+        }
+        .grid{
+            display: grid;
+            grid-template-columns: 346px 339px 342px;
+            grid-row:346px 339px;
+            align-items: center;
+            justify-content: center;
+        }
+        .GALLARY::before{
+            content: "";
+            position: absolute;
+            background: url(yel.jpg)no-repeat center center/cover;
+            height: 110%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.7;
+        }
+        .fix{
+            width: 265px;
+        }
+        .form{
+            margin-top: 110px;
+        border: 2px solid black;
+        border-radius: 10px;
+        width: 789px;
+        margin: auto;
+        padding: 22px;
+        height: 200px;
+        }
+        #btn{
+            color: black;
+            border: 2px solid black;
+            font-size: 1.1rem;
+            font-weight: bolder;
+            font-family: 'Fredoka One', cursive;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        #btn:hover{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header class="top">
+    <div class="left">
+        <img src="log.png" alt="logo">
+    </div>
+    <div class="mid">
+        <ul class="navbar">
+            <li><a href="">HOME</a></li>
+            <li><a href="">SERVICE</a></li>
+            <li><a href="">GALLARY</a></li>
+            <li><a href="">CONTACT US</a></li>
+        </ul>
+    </div>
+    <div class="right">
+        <a href="https://www.facebook.com/pg/JKInterior1971/about/?ref=page_internal" target="blank"><img src="fb.jpeg" alt=""></a>
+        <a href="https://www.instagram.com/deepsjacker/" target="blank"><img src="ins.jpg" alt=""></a>
+    </div>
+    </header>
+    <section id="home">
+        <h1 id="head">JKINTERIORS</h1>
+        <h1 id="h-primary">WELCOME TO INTERIOR HUB</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br> &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; Lorem ipsum dolor sit.</p>
+       <br>
+        <button id="btn">CLICK HERE</button>
+    </section>
+
+    <section id="services" style="margin-top: -1px;">
+        <h1 style="text-align: center; font-family: 'Fredoka One', cursive;">OUR SERVICES</h1>
+        <div style=" display: flex; margin-top: 1px; align-items: center; justify-content: center;">
+            <div class="cont">
+                <img src="int.jpg" alt="" id="img">
+               <h3 class="center">COMPLETE HOME</h3>
+            </div>
+            <div class="cont">
+                <img src="kit.jpg" alt="" id="img1">
+                <h3 class="center">KITCHEN DESIGN</h3>
+            </div>
+            <div class="cont">
+                <img src="wad.jpg" alt="" id="img2">
+                    <h3 class="center">WADROBE</h3>
+            </div>
+        </div>
+    </section>
+    <section class="GALLARY" style="margin-top: 170px;">
+        <h1 style="text-align: center; font-family: 'Fredoka One', cursive;">GALLARY</h1>
+          <div class="grid">
+              <div class="cont">
+              <img src="wad.jpg" alt="" class="fix">
+            </div>
+            <div class="cont">
+                <img src="wad.jpg" alt="" class="fix">
+              </div>
+              <div class="cont">
+                <img src="wad.jpg" alt="" class="fix">
+              </div>
+              <div class="cont">
+                <img src="wad.jpg" alt="" class="fix">
+              </div>
+              <div class="cont">
+                <img src="wad.jpg" alt="" class="fix">
+              </div>
+              <div class="cont">
+                <img src="wad.jpg" alt="" class="fix">
+              </div>
+          </div>
+    </section>
+    <section class="form" style="text-align: center; font-family: 'Fredoka One', cursive;">
+        <h1 >Fill in the form to Get a Call back</h1>
+        <div style="display: flex; margin-top: 28px; align-items: center; justify-content: center;">
+         NAME:  <input type="text"> &nbsp;&nbsp; 
+         PHONE:  <input type="number">  &nbsp; 
+         DESIGNE TYPE: <select name="des" id="">
+             <option value="">HOME PAINTING</option>
+             <option value="">KITCHEN</option>
+             <option value="">WADROBE</option>
+             <option value="">MARBLE FITTING</option>
+             <option value="">HOME INTERIOR</option>
+         </select>
+
+        </div>
+        <div style="display: flex; margin-top: 28px; align-items: center; justify-content: center;">
+            EMAIL:  <input type="email">&nbsp;&nbsp;&nbsp; 
+            PRICE:  <input type="number">
+           
+           </div>
+           <br>
+           <button id="btn" onclick="submit()">CLICK HERE</button>
+           <div>
+               <h3 id="end"></h3>
+           </div>
+    </section>
+  <div style="font-family: 'Fredoka One', cursive; padding: 10px; display: flex; margin-top: 10px;">
+      <h3>CONTACT US: </h3>&nbsp;
+      <h3>9432572472</h3>
+      <script>
+          function submit() {
+    let btn=document.getElementById("btn");
+    let head=document.getElementById("end");
+    head.innerHTML="THNKS FOR RESPONSE!";
+    console.log("hii");
+    }
+      </script>
+  </div>
+</body>
+</html>
