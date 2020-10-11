@@ -17,7 +17,7 @@ Here I list some of them:
 <li>Fork this repository</li>
 <li>Clone this in your terminal by doing git clone https://github.com/deepak821/Interior-Designing.git</li>
 <li>After modifications, commit the changes</li>
-
+<li>After that, you can send me a pull request</li>
 
 </ol>
 
